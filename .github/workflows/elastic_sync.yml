@@ -31,7 +31,7 @@ jobs:
           ELASTIC_KEY: ${{ secrets.ELASTIC_KEY }}
           CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
         run: |
-          for file in ${ALL_CHANGED_FILES}; do
+          for file in ${CHANGED_FILES}; do
             echo "$file was changed"
           done  
       - run: pip install requests
