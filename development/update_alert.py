@@ -2,8 +2,8 @@ import requests
 import os
 import tomllib
 
-url = "https://ebc566c641254c04a477b1cb23ba9781.us-central1.gcp.cloud.es.io/app/security/rules/management"
-api_key = os.environ['ELASTIC_KEY']
+url = "https://ebc566c641254c04a477b1cb23ba9781.us-central1.gcp.cloud.es.io:9243/api/detection_engine/rules"
+api_key = "TG5KRlZwd0I4UEstaTh1d01uU206YTJqYXkxSXIwYUJORWVJMnJObm5nZw=="
 
 headers = {
     'Content-Type': 'application/json;charset=UTF-8',
