@@ -11,12 +11,12 @@ headers = {
     'Authorization': 'ApiKey ' + api_key
 }
 
-#changed_files = os.environ["CHANGED_FILES"]
+changed_files = os.environ["CHANGED_FILES"]
 
 data = ""
-for root, dirs, files in os.walk("D:/Training/Detection-Engg/Training/Python/detection-engineering1/detections"):
+for root, dirs, files in os.walk("detections/"):
     for file in files:
-      #  if file in changed_files:
+          if file in changed_files:
             data = "{\n"
             if file.endswith(".toml"):
                 full_path = os.path.join(root, file)
@@ -54,5 +54,10 @@ for root, dirs, files in os.walk("D:/Training/Detection-Engg/Training/Python/det
             url = url + "?rule_id=" + rule_id
         
             elastic_data = requests.put(url, headers=headers, data=data).json()
-            print(elastic_data)
+        
+            for key in elastic_data:
+                if key == "status_code":
+                    if 404 == elastic_data["status_code"]:
+                        elastic_data = requests.post(url, headers=headers, data=data).json()
+                        print(elastic_data)
 
