@@ -1,6 +1,8 @@
 import tomllib
 import os
 import datetime
+import dateutil
+
 from dateutil.relativedelta import relativedelta
 
 list = {}
@@ -14,7 +16,7 @@ current = {}
 one_month = {}
 two_months = {}
 
-for root, dirs, files in os.walk("detections/"):
+for root, dirs, files in os.walk("D:/Training/Detection-Engg/Training/Python/detection-engineering1/detections/"):
     for file in files:
         if file.endswith(".toml"):
             full_path = os.path.join(root, file)
@@ -64,7 +66,8 @@ for root, dirs, files in os.walk("detections/"):
 
                 list[file] = obj
 
-output_path = "metrics/recentdetections.md"
+output_path = "D:/Training/Detection-Engg/Training/Python/detection-engineering1/" \
+"metrics/recentdetections.md"
 
 outF = open(output_path, "w")
 outF.write("# Detection Report\n")
