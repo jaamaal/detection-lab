@@ -1,0 +1,19 @@
+[metadata]
+creation_date = "2024-02-14"
+
+[rule]
+name = "SMB Lateral Movement"
+author = ['Detection Team', 'SOC']
+risk_score = 45
+severity = "medium"
+
+[[rule.threat]]
+framework = "MITRE ATT&CK"
+tactic = { name = "Lateral Movement", id = "TA0008" }
+
+[[rule.threat.technique]]
+id = "T1021"
+name = "Remote Services"
+[[rule.threat.technique.subtechnique]]
+id = "T1021.002"
+name = "SMB/Windows Admin Shares"
