@@ -1,6 +1,8 @@
 import tomllib
 import os
 import datetime
+import dateutil
+
 from dateutil.relativedelta import relativedelta
 
 list = {}
@@ -14,7 +16,7 @@ current = {}
 one_month = {}
 two_months = {}
 
-for root, dirs, files in os.walk("detections/"):
+for root, dirs, files in os.walk("D:/Training/Detection-Engg/Training/Python/detection-engineering1/detections/"):
     for file in files:
         if file.endswith(".toml"):
             full_path = os.path.join(root, file)
@@ -64,15 +66,16 @@ for root, dirs, files in os.walk("detections/"):
 
                 list[file] = obj
 
-output_path = "metrics/recentdetections.md"
+output_path = "D:/Training/Detection-Engg/Training/Python/detection-engineering1/" \
+"metrics/recentdetections.md"
 
 outF = open(output_path, "w")
-outF.write("# Detection Report\n")
+outF.write("# Detection Report\n\n")
 
 outF.write("## Current Month\n")
-outF.write("### New Alerts\n")
+outF.write("### New Alerts\n\n")
 outF.write("| Alert | Date | Author | Risk Score | Severity |\n")
-outF.write("| --- | --- | --- | --- | --- |\n")
+outF.write("| ----- | ---- | ------ | ---------- | -------- |\n")
 # Current Month
 for line in current.values():
     date = line['date']
@@ -83,10 +86,10 @@ for line in current.values():
 
     outF.write("|" + name + "|" + date + "|" + author + "|" + risk_score  + "|" + severity + "|\n")
 
-outF.write("## Last Month\n")
-outF.write("### Alerts\n")
+outF.write("\n\n## Last Month\n")
+outF.write("### Alerts\n\n")
 outF.write("| Alert | Date | Author | Risk Score | Severity |\n")
-outF.write("| --- | --- | --- | --- | --- |\n")
+outF.write("| ----- | ---- | ------ | ---------- | -------- |\n")
 
 # Last Month
 for line in one_month.values():
@@ -99,10 +102,10 @@ for line in one_month.values():
 
     outF.write("|" + name + "|" + date + "|" + author + "|" + risk_score  + "|" + severity + "|\n")
 
-outF.write("## Two Months Ago\n")
-outF.write("### Alerts\n")
+outF.write("\n\n## Two Months Ago\n")
+outF.write("### Alerts\n\n")
 outF.write("| Alert | Date | Author | Risk Score | Severity |\n")
-outF.write("| --- | --- | --- | --- | --- |\n")
+outF.write("| ----- | ---- | ------ | ---------- | -------- |\n")
 # Two Months
 for line in two_months.values():
     date = line['date']
