@@ -1,9 +1,3 @@
-# Detection Engineering
-This repo is for the Detection as Code CI/CD pipeline
-
-A hands-on repo to implementing Detection as Code
-
-
 # Detection Lab
 
 [![GitHub Repo](https://img.shields.io/badge/github-jaamaal/detection--lab-blue)](https://github.com/jaamaal/detection-lab)
@@ -58,5 +52,3 @@ We welcome contributions! To contribute:
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-Do you want me to do that next?
