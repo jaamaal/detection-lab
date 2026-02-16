@@ -95,4 +95,4 @@ jobs:
           echo "📁 Check the metrics folder for:"
           echo "  - All_Rules_Created.csv"
           echo "  - Detections_Report.md"
-          echo "  - navigator.json"
+          echo "  - Navigator.json"
