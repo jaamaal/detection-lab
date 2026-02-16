@@ -1,4 +1,0 @@
-name,date,author,risk_score,severity,tactic,technique,subtechnique
-SMB Lateral Movement,2024-02-14,Detection Team; SOC,45,medium,Lateral Movement,T1021 - Remote Services,T1021.002 - SMB/Windows Admin Shares
-Suspicious PowerShell Execution,2024-02-14,Security Team,65,high,Execution,T1059 - Command and Scripting Interpreter,T1059.001 - PowerShell
-Ransomware File Extensions,2024-02-14,Threat Intel,85,critical,Impact,T1486 - Data Encrypted for Impact,none - none
