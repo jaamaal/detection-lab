@@ -5,6 +5,8 @@ on:
     branches:
       - main                        # or master, depending on your default branch
   workflow_dispatch:                 # Allow manual trigger for testing
+  schedule:
+    - cron: "0 0 * * FRI" # Run Every Friday at Mid-night
 
 jobs:
   Metrics:
