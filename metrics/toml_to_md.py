@@ -66,7 +66,7 @@ for root, dirs, files in os.walk("detections/"):
 
                 list[file] = obj
 
-output_path = "metrics/recentdetections.md"
+output_path = "metrics/Recent_Detections.md"
 
 outF = open(output_path, "w")
 outF.write("# Detection Report\n\n")
