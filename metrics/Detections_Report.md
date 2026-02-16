@@ -4,7 +4,7 @@
 
 | Alert | Date | Author | Risk Score | Severity |
 | --- | --- | --- | --- | --- |
-|Data Archive for Potential Exfil|2026/02/11|['Jamal Uddin Shaikh']|50|medium|
+|Data Archive for Potential Exfil|2026/02/12|['Jamal Uddin Shaikh']|50|medium|
 |Data Exfiltration Observed via FTP|2026/02/11|['Jamal Uddin Shaikh']|75|high|
 |Suspicious File Written to Temp Directory|2026/02/11|['Jamal Uddin Shaikh']|75|high|
 |Potential MSF PowerShell Payload Observed|2026/02/11|['Jamal Uddin Shaikh']|50|high|

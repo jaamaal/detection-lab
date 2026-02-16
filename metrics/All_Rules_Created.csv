@@ -1,5 +1,5 @@
 name,date,author,risk_score,severity,tactic,technique,subtechnique
-Data Archive for Potential Exfil,2026/02/11,Jamal Uddin Shaikh,50,medium,Collection,T1074 - Data Staged,T1074.001 - Local Data Staging
+Data Archive for Potential Exfil,2026/02/12,Jamal Uddin Shaikh,50,medium,Collection,T1074 - Data Staged,T1074.001 - Local Data Staging
 Data Exfiltration Observed via FTP,2026/02/11,Jamal Uddin Shaikh,75,high,Exfiltration,T1020 - Automated Exfiltration,none - none
 Suspicious File Written to Temp Directory,2026/02/11,Jamal Uddin Shaikh,75,high,Discovery; Discovery,T1082 - System Information Discovery; T1217 - Browser Information Discovery,none - none; none - none
 Potential MSF PowerShell Payload Observed,2026/02/11,Jamal Uddin Shaikh,50,high,Execution,T1059 - Command and Scripting Interpreter,T1059.001 - PowerShell
