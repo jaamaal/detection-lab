@@ -12,7 +12,7 @@
 |Suspicious File Added to Registry|2026/02/11|['Jamal Uddin Shaikh']|75|high|
 |Excessive Web Traffic|2026/02/11|['Jamal Uddin Shaikh']|25|low|
 |PowerShell Invoke-WebRequest Downloading .BAT File|2026/02/11|['Jamal Uddin Shaikh']|50|medium|
-|Bat files observed in HTTP Traffic on Unusual Port |2026/02/14|['Jamal Uddin Shaikh']|100|medium|
+|Bat files observed in HTTP Traffic on Unusual Port |2026/02/15|['Jamal Uddin Shaikh']|100|medium|
 |PowerShell Execution via a BAT File|2026/02/11|['Jamal Uddin Shaikh']|50|medium|
 ## Last Month
 ### Alerts
