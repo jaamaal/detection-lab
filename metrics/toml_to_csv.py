@@ -2,6 +2,7 @@ import tomllib
 import os
 import csv
 
+# Author = Jamal Uddin Shaikh
 # Configuration - CHANGE THIS TO YOUR DEVELOPMENT FOLDER PATH
 INPUT_PATH = "D:/Training/Detection-Engg/Training/Python/detection-engineering1/detections"  # Changed from 'metrics' to 'development'
 #OUTPUT_PATH = os.path.join(INPUT_PATH, "detectiondata.csv")  # CSV will be created in the same folder
