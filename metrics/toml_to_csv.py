@@ -5,7 +5,7 @@ import csv
 # Configuration - CHANGE THIS TO YOUR DEVELOPMENT FOLDER PATH
 INPUT_PATH = "detections/"  # Changed from 'metrics' to 'development'
 #OUTPUT_PATH = os.path.join(INPUT_PATH, "detectiondata.csv")  # CSV will be created in the same folder
-OUTPUT_PATH = "metrics/detectiondata.csv"
+OUTPUT_PATH = "metrics/All_Rules_Created.csv"
 
 # Check if input path exists
 if not os.path.exists(INPUT_PATH):
