@@ -63,7 +63,7 @@ for root, dirs, files in os.walk("detections/"):
                 elif date_compare == two_month_ago:
                     two_months[file] = obj
 
-output_path = "D:/Training/Detection-Engg/Training/Python/detection-engineering1/metrics/latestdetections.md"
+output_path = "latestdetections.md"
 separator = "; "
 
 outF = open(output_path, "w")
