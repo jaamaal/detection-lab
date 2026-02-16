@@ -3,9 +3,9 @@ import os
 import csv
 
 # Configuration - CHANGE THIS TO YOUR DEVELOPMENT FOLDER PATH
-INPUT_PATH = "D:/Training/Detection-Engg/Training/Python/detection-engineering1/detections"  # Changed from 'metrics' to 'development'
+INPUT_PATH = "detections/"  # Changed from 'metrics' to 'development'
 #OUTPUT_PATH = os.path.join(INPUT_PATH, "detectiondata.csv")  # CSV will be created in the same folder
-OUTPUT_PATH = "D:/Training/Detection-Engg/Training/Python/detection-engineering1/metrics/detectiondata.csv"
+OUTPUT_PATH = "metrics/detectiondata.csv"
 
 # Check if input path exists
 if not os.path.exists(INPUT_PATH):
