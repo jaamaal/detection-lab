@@ -1,7 +1,7 @@
 import tomllib
 import os
 
-techniques = {}
+techniques = {} # This is for testing
 
 for root, dirs, files in os.walk("D:\Training\Detection-Engg\Training\Python\detection-engineering1\detections"):
     for file in files:
