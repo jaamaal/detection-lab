@@ -20,9 +20,9 @@ jobs:
           token: ${{ secrets.REPORT_METRICS_KEY }}
       
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v4
         with:
-          python-version: '3.11'      # Use 3.11 instead of 3.14 (3.14 not released yet)
+          python-version: '3.14.3'     
       
       - name: Install dependencies
         run: |
@@ -41,13 +41,13 @@ jobs:
       - name: Run CSV Generator (toml_to_csv.py)
         run: |
           echo "📊 Generating All_Rules_Created.csv..."
-          python metrics/toml_to_csv.py
+          python development/toml_to_csv.py
         continue-on-error: false
       
       - name: Run Markdown Report Generator (toml_to_md.py)
         run: |
           echo "📝 Generating Recent_Detections.md..."
-          python metrics/toml_to_md.py
+          python development/toml_to_md.py
         continue-on-error: false
 
       - name: Run Markdown Report Generator (toml_to_report.py)
@@ -59,7 +59,7 @@ jobs:
       - name: Run MITRE Navigator Generator (toml_to_navigator.py)
         run: |
           echo "🗺️ Generating navigator.json..."
-          python metrics/toml_to_navigator.py
+          python development/toml_to_navigator.py
         continue-on-error: false
       
       - name: Configure Git
