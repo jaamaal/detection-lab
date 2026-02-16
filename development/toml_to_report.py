@@ -4,7 +4,7 @@ import datetime
 from dateutil.relativedelta import relativedelta
 
 current = {}
-one_month = {}
+one_month = {} # Last one Month
 two_months = {}
 
 filtered_object_array = []
