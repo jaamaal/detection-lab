@@ -6,7 +6,6 @@
 | --- | --- | --- | --- | --- |
 |Data Archive for Potential Exfil|2026/02/12|['Jamal Uddin Shaikh']|50|medium|
 |Data Exfiltration Observed via FTP|2026/02/13|['Jamal Uddin Shaikh']|75|high|
-|Suspicious File Written to Temp Directory|2026/02/11|['Jamal Uddin Shaikh']|75|high|
 |Potential MSF PowerShell Payload Observed|2026/02/11|['Jamal Uddin Shaikh']|50|high|
 |Web Scanner Activity - Nmap and Nikto|2026/02/11|['Jamal Uddin Shaikh']|25|low|
 |Suspicious File Added to Registry|2026/02/11|['Jamal Uddin Shaikh']|75|high|
